@@ -1,0 +1,50 @@
+{
+  "name": "react-img-webp",
+  "version": "1.0.0",
+  "description": "React rendering WebP on supported platforms",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack --mode=production",
+    "lint": "./node_modules/.bin/tslint --project .",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Horat1us/react-img-webp.git"
+  },
+  "keywords": [
+    "react-component",
+    "react",
+    "webp",
+    "image",
+    "context"
+  ],
+  "author": "Alexander <horat1us>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Horat1us/react-img-webp/issues"
+  },
+  "homepage": "https://github.com/Horat1us/react-img-webp#readme",
+  "dependencies": {
+    "react": "^16.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.7.21",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.5",
+    "circular-dependency-plugin": "^5.0.2",
+    "clean-webpack-plugin": "^1.0.1",
+    "source-map-loader": "^0.2.4",
+    "tslint": "^5.12.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

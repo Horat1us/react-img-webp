@@ -1,0 +1,63 @@
+{
+    "extends": [
+      "tslint:latest",
+      "tslint-react"
+    ],
+    "rules": {
+      "no-empty-interface": true,
+      "jsx-alignment": true,
+      "jsx-equals-spacing": [
+        true,
+        "never"
+      ],
+      "jsx-key": true,
+      "jsx-no-bind": true,
+      "jsx-no-lambda": true,
+      "jsx-no-string-ref": true,
+      "jsx-self-close": true,
+      "jsx-wrap-multiline": true,
+      "no-magic-numbers": [-1, 0, 1, 2],
+      "no-reference": true,
+      "curly": true,
+      "await-promise": true,
+      "no-empty": true,
+      "no-floating-promises": false,
+      "no-invalid-this": true,
+      "no-null-keyword": false,
+      "no-var-keyword": true,
+      "triple-equals": true,
+      "typeof-compare": false,
+      "max-classes-per-file": [
+        true,
+        1
+      ],
+      "max-file-line-count": [
+        true,
+        200
+      ],
+      "no-default-export": true,
+      "no-duplicate-imports": true,
+      "prefer-const": true,
+      "trailing-comma": [
+        true,
+        {
+          "multiline": {
+            "functions": "never"
+          },
+          "singleline": "never"
+        }
+      ],
+      "semicolon": false,
+      "class-name": true,
+      "interface-name": [
+        true,
+        "never-prefix"
+      ],
+      "space-within-parens": false,
+      "object-literal-sort-keys": false,
+      "ordered-imports": false,
+      "no-unused-expression": false,
+      "jsx-boolean-value": false
+    }
+  }
+  

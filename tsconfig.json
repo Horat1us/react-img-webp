@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "lib": ["esnext", "dom"],
+      "sourceMap": true,
+      "removeComments": true,
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "jsx": "react",
+      "declaration": true,
+      "declarationDir": "build",
+      "strictNullChecks": true
+    },
+    "exclude": [
+      "./node_modules/**/*",
+      "tests"
+    ]
+  }
+  
