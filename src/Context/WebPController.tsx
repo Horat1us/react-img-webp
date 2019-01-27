@@ -6,7 +6,7 @@ export interface WebPControllerProps {
     accept: string | undefined;
 }
 
-export class WebPController extends React.PureComponent<WebPControllerProps, WebPValue> {
+export class WebPController extends React.Component<WebPControllerProps, WebPValue> {
     public readonly state: WebPValue = {
         supportWebP: this.supportWebpByHeaders,
     }
