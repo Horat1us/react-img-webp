@@ -3,6 +3,7 @@
 ## Features
 - Rendering image in [WebP format](https://developers.google.com/speed/webp/) if browser supports.
 - Server-side rendering using [React Context](https://reactjs.org/docs/context.html)
+- Written on Typescript
 
 *Note: as of January, 2019 only **72.59%** supports WebP format ([caniuse.com](https://caniuse.com/#feat=webp))*
 
