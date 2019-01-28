@@ -7,10 +7,10 @@
 .babelrc
 .eslintrc
 npm-debug.log
-lib
 src/
-tests/
 .nyc_output/
 node_modules/
 .travis.yml
-
+__tests__/
+webpack.config.js
+tslint.json

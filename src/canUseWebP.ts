@@ -4,7 +4,7 @@ export function canUseWebP(): boolean {
     }
 
     const canvas = document.createElement("canvas");
-    if (!canvas.getContext("2d")) {
+    if (!canvas.getContext || !canvas.getContext("2d")) {
         return false;
     }
     return canvas.toDataURL("image/webp").indexOf("data:image/webp") === 0;
