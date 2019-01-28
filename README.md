@@ -1,4 +1,5 @@
 # React Image Webp
+[![Build Status](https://travis-ci.org/Horat1us/react-img-webp.svg?branch=master)](https://travis-ci.org/Horat1us/react-img-webp)
 
 ## Features
 - Rendering image in [WebP format](https://developers.google.com/speed/webp/) if browser supports.
