@@ -55,6 +55,31 @@ export const Component = () => {
 }
 ```
 
+### For inline styles (background-image etc.)
+You may use context manually to render any element instead of `<img>`:
+```js
+import * as React from "react";
+import { Context } from "react-img-webp";
+
+const img = {
+    src: require("icon.png"),
+    webP: require("icon.webp"),
+};
+
+export const Icon: React.FunctionComponent = () => (
+    <Context.WebP.Consumer>
+        {(value) =>
+            <i
+                className="icon"
+                style={{
+                    backgroundImage: `url(${value.supportWebP ? img.webP : img.src})`,
+                }}
+            />
+        }
+    </Context.WebP.Consumer>
+);
+```
+
 ## Contributors
 - [Alexander <horat1us> Letnikow](mailto:reclamme@gmail.com)
 
