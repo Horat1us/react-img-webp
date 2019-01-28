@@ -9,6 +9,7 @@ export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
 export const Image: React.FunctionComponent<ImageProps> = (props) => {
     const childProps = { ...props };
     delete childProps.webP;
+    delete childProps.useWebP;
 
     return (
         <img {...childProps} src={props.useWebP && props.webP || props.src} />
