@@ -3,7 +3,7 @@
   "version": "1.1.2",
   "description": "React rendering WebP on supported platforms",
   "main": "build/index.js",
-  "typings": "build/index.d.ts",
+  "typings": "build/src/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "./node_modules/.bin/webpack --mode=production",
