@@ -6,7 +6,7 @@ export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
     useWebP?: boolean;
 }
 
-export const Image: React.FunctionComponent<ImageProps> = (props) => {
+export const Image: React.FunctionComponent<ImageProps> = React.memo((props) => {
     const childProps = { ...props };
     delete childProps.webP;
     delete childProps.useWebP;
@@ -14,7 +14,7 @@ export const Image: React.FunctionComponent<ImageProps> = (props) => {
     return (
         <img {...childProps} src={props.useWebP && props.webP || props.src} />
     );
-}
+});
 
 const ImageDefaultProps: {
     [k in keyof ImageProps]?: any
