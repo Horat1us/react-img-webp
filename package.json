@@ -1,6 +1,6 @@
 {
   "name": "react-img-webp",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "React rendering WebP on supported platforms",
   "main": "build/index.js",
   "typings": "build/src/index.d.ts",
