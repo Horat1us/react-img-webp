@@ -1,6 +1,6 @@
 {
   "name": "react-img-webp",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "description": "React rendering WebP on supported platforms",
   "main": "dist/react-img-webp.cjs.js",
   "module": "dist/react-img-webp.esm.js",
