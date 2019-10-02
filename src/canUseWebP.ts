@@ -5,7 +5,7 @@ export function canUseWebP(): boolean {
         return false;
     }
 
-    if (typeof checked !== 'undefined') {
+    if (typeof checked !== "undefined") {
         return checked;
     }
 
