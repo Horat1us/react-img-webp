@@ -1,11 +1,11 @@
-let checked = undefined;
+let checked: boolean;
 
 export function canUseWebP(): boolean {
     if (typeof document !== "object") {
         return false;
     }
 
-    if(checked !== undefined)
+    if(typeof checked !== 'undefined')
         return checked;
     
     const canvas = document.createElement("canvas");
