@@ -1,19 +1,17 @@
 let checked: boolean; // eslint-disable-line
 
 export function canUseWebP(): boolean {
-    if (typeof document !== "object") {
-        return false;
+    if ("undefined" !== typeof checked) {
+        return checked;
     }
 
-    if (typeof checked !== "undefined") {
-        return checked;
+    if ("object" !== typeof document) {
+        return false;
     }
 
     const canvas = document.createElement("canvas");
     if (!canvas.getContext || !canvas.getContext("2d")) {
-        checked = false;
-        return false;
+        return checked = false;
     }
-    checked = canvas.toDataURL("image/webp").indexOf("data:image/webp") === 0
-    return checked;
+    return checked = canvas.toDataURL("image/webp").indexOf("data:image/webp") === 0
 }
